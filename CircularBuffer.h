@@ -10,7 +10,7 @@
 #ifndef D_CircularBuffer_H
 #define D_CircularBuffer_H
 
-typedef struct CircularBufferStruct *CircularBuffer;
+typedef struct CircularBufferStruct* CircularBuffer;
 
 //Option 1: CircularBufferStruct defined in header file
 typedef struct CircularBufferStruct {
