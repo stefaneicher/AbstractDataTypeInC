@@ -5,13 +5,13 @@
 #include <string.h>
 
 //Option 2: CircularBufferStruct defined in c file and the type is private to the c file
-//typedef struct CircularBufferStruct {
-//    int count;
-//    int index;
-//    int outdex;
-//    int capacity;
-//    int *values;
-//} CircularBufferStruct;
+typedef struct CircularBufferStruct {
+   int count;
+   int index;
+   int outdex;
+   int capacity;
+   int *values;
+} CircularBufferStruct;
 
 enum { BUFFER_GUARD = -999 };
 
