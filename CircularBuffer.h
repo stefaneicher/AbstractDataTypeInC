@@ -13,13 +13,13 @@
 typedef struct CircularBufferStruct* CircularBuffer;
 
 //Option 1: CircularBufferStruct defined in header file
-typedef struct CircularBufferStruct {
-    int count;
-    int index;
-    int outdex;
-    int capacity;
-    int *values;
-} CircularBufferStruct;
+// typedef struct CircularBufferStruct {
+//     int count;
+//     int index;
+//     int outdex;
+//     int capacity;
+//     int *values;
+// } CircularBufferStruct;
 
 CircularBuffer CircularBuffer_Create(int capacity);
 void CircularBuffer_Destroy(CircularBuffer);
