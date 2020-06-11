@@ -12,14 +12,15 @@
 
 typedef struct CircularBufferStruct* CircularBuffer;
 
-//Option 1: CircularBufferStruct defined in header file
-typedef struct CircularBufferStruct {
-    int count;
-    int index;
-    int outdex;
-    int capacity;
-    int *values;
-} CircularBufferStruct;
+//Option no ADT: CircularBufferStruct defined in header file. The structure of CircularBuffer
+// is accessible from outside the CircularBuffer.h module
+//typedef struct CircularBufferStruct {
+//    int count;
+//    int index;
+//    int outdex;
+//    int capacity;
+//    int *values;
+//} CircularBufferStruct;
 
 CircularBuffer CircularBuffer_Create(int capacity);
 void CircularBuffer_Destroy(CircularBuffer);

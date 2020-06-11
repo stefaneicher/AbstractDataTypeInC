@@ -4,14 +4,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-//Option 2: CircularBufferStruct defined in c file and the type is private to the c file
-//typedef struct CircularBufferStruct {
-//    int count;
-//    int index;
-//    int outdex;
-//    int capacity;
-//    int *values;
-//} CircularBufferStruct;
+//Option ADT: A Abstract Data Type since CircularBufferStruct defined in c file and the type internal structure is private to the c file
+typedef struct CircularBufferStruct {
+    int count;
+    int index;
+    int outdex;
+    int capacity;
+    int *values;
+} CircularBufferStruct;
 
 enum { BUFFER_GUARD = -999 };
 
